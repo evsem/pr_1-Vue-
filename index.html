@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue</title>
+    <link rel="stylesheet" href="../pr_1/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,regular,500,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="Vue_container">
+      <header class="header_container">
+        <h2 class="header_title">{{ title_Text }}</h2>
+      </header>
+
+      <main class="main_container">
+        <section class="counter_block">
+          <p class="counter">Counter: {{ counter }}</p>
+
+          <div class="button_flex">
+            <button class="btn" @click="counter++">Plus</button>
+            <button class="btn" @click="counter--">Minus</button>
+          </div>
+        </section>
+
+        <section class="note_block">
+          <h2 class="note_title">Notes</h2>
+
+          <div class="note_valueFlex">
+            <input
+              class="input_note"
+              type="text"
+              :value="inputValue"
+              :placeholder="place_Text"
+              @input="changeInput"
+            />
+            <button class="note_button" @click="addNewNote">Add</button>
+          </div>
+
+          <ol class="note_list">
+            <li class="item_list" v-for="note in notes">{{ note }}</li>
+          </ol>
+        </section>
+      </main>
+
+      <footer class="footer_container"></footer>
+    </section>
+
+    <script src="../pr_1/js/mainScript.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="../pr_1/js/app.js"></script>
+  </body>
+</html>

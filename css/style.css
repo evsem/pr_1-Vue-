@@ -1,0 +1,100 @@
+body {
+  background-color: whitesmoke;
+}
+
+.Vue_container {
+  margin: 0 auto;
+  max-width: 840px;
+  font-family: 'Montserrat';
+}
+
+.header_container {
+}
+
+.header_title,
+.note_title {
+  font-size: 32px;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.main_container {
+}
+
+.counter_block {
+  margin: 50px 0px;
+}
+
+.infoCounter {
+}
+
+.counter {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  color: black;
+}
+
+.button_flex,
+.note_valueFlex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  min-width: 100px;
+  min-height: auto;
+  background-color: white;
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  border: 2px solid grey;
+  border-radius: 16px;
+  margin: 0px 10px 0px 0px;
+}
+.btn:last-child {
+  margin: 0;
+}
+
+.note_block {
+  margin-bottom: 50px;
+}
+
+.note_title {
+  margin: 16px 0px;
+}
+
+.input_note {
+  min-width: 300px;
+  min-height: 18px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  margin: 0px 10px 0px 0px;
+}
+
+.note_button {
+  min-width: 90px;
+  min-height: auto;
+  background-color: white;
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  border: 2px solid grey;
+  border-radius: 4px;
+}
+
+.note_String {
+}
+
+.note_list {
+  font-family: 'Montserrat';
+}
+
+.footer_container {
+}
